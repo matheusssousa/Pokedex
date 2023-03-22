@@ -4,7 +4,7 @@ import Pokemon from "../Pokemon";
 import "./style.css";
 
 const Pokedex = (props) => {
-    const { pokemons, loading, page, setPage, totalPages} = props
+    const { pokemons, loading, page, setPage, totalPages } = props
     console.log("pokemons: ", pokemons)
 
     const OnPreviousClickHandler = () => {
@@ -14,7 +14,7 @@ const Pokedex = (props) => {
     }
 
     const OnAfterClickHandler = () => {
-        if (page+1 != totalPages) {
+        if (page + 1 != totalPages) {
             setPage(page + 1)
         }
     }
@@ -23,12 +23,14 @@ const Pokedex = (props) => {
         <div className="pokedex">
             <div className="pokedex-header">
                 <h1>Pokedex</h1>
-                <Pagination page={page+1} totalPages={totalPages} previousClick={OnPreviousClickHandler} afterClick={OnAfterClickHandler}/>
+                <div className="pokedex-pagination">
+                    <Pagination page={page + 1} totalPages={totalPages} previousClick={OnPreviousClickHandler} afterClick={OnAfterClickHandler} />
+                </div>
             </div>
             {loading ? (<div>Carregando</div>) :
                 (<div className="pokedex-grid">
                     {pokemons && pokemons.map((pokemon, index) => {
-                        return (<Pokemon pokemon={pokemon} key={index}/>)
+                        return (<Pokemon pokemon={pokemon} key={index} />)
                     })}
                 </div>)}
         </div>

@@ -1,22 +1,23 @@
 import { Heart } from "@phosphor-icons/react";
 import React from "react";
+import "./style.css"
 
 const Pokemon = (props) => {
     const { pokemon } = props
     
-    const onHeartClick = () => {
-        console.log("pode favoritar ")
-    }
+    // const onHeartClick = () => {
+    //     console.log("pode favoritar ")
+    // }
     
     return (
         <div className="card-pokemon">
             <div className="pokemonimg">
-                <img alt={pokemon.name} src={pokemon.sprites.front_default} />
+                <img alt={pokemon.name} src={pokemon.sprites.front_default}/>
             </div>
             <div className="pokemoncardbody">
                 <div className="cardbody-top">
                     <h1>{pokemon.name}</h1>
-                    <p>{pokemon.id}</p>
+                    {/* <p>{pokemon.id}</p> */}
                 </div>
                 <div className="cardbody-bottom">
                         <div>{pokemon.types.map((type, index) => {
@@ -26,9 +27,9 @@ const Pokemon = (props) => {
                                 </div>
                             )
                         })}</div>
-                        <button className="pokemon-heart-btn" onClick={onHeartClick}>
+                        {/* <button className="pokemon-heart-btn" onClick={onHeartClick}>
                             <Heart size={22}/>
-                        </button>
+                        </button> */}
                 </div>
             </div>
         </div>

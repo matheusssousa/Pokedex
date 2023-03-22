@@ -1,0 +1,6 @@
+.containerpagination{
+    @apply w-full flex justify-center gap-2 
+}
+.containerpagination button{
+    @apply hover:text-blue-700 duration-200 text-yellow-300
+}
