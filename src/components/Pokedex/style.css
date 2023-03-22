@@ -1,0 +1,10 @@
+.pokedex-header{
+    @apply w-full flex items-center justify-center m-4
+}
+.pokedex-header h1{
+    @apply font-extralight text-2xl text-yellow-300
+}
+
+.pokedex-grid{
+    @apply grid gap-2 grid-cols-3
+}
