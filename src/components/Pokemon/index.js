@@ -20,9 +20,10 @@ const Pokemon = (props) => {
                     {/* <p>{pokemon.id}</p> */}
                 </div>
                 <div className="cardbody-bottom">
-                        <div>{pokemon.types.map((type, index) => {
+                        <div className="pokemon-type">{pokemon.types.map((type, index) => {
                             return(
-                                <div key={index} className="pokemon-type">
+                                <div key={index} className={(type.type.name) == "grass" ? "pokemon-typegrass": 
+                                `${(type.type.name) == "fire" ? "pokemon-typefire":""}`}>
                                     {type.type.name}
                                 </div>
                             )
