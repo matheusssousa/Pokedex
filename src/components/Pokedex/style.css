@@ -5,8 +5,9 @@
     @apply w-full font-semibold text-2xl text-yellow-400
 }
 .pokedex-pagination{
-    @apply w-20 flex items-center justify-center mr-4
+    @apply w-32 flex items-center justify-center mr-4
 }
 .pokedex-grid{
-    @apply grid gap-2 grid-cols-3
+    @apply grid gap-2 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1
 }
+
