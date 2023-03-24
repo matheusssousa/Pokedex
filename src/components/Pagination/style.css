@@ -5,5 +5,5 @@
     @apply hover:text-blue-700 duration-200 text-yellow-300
 }
 .containerpagination h2{
-    @apply text-gray-500 font-medium
+    @apply text-gray-500 font-medium dark:text-gray-200
 }

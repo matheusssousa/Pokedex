@@ -1,5 +1,5 @@
 .card-pokemon{
-    @apply w-full flex h-24 rounded-md shadow-md bg-slate-100 items-center
+    @apply w-full flex h-24 rounded-md shadow-md bg-slate-100 items-center dark:bg-zinc-700
 }
 .pokemon-img{
     @apply w-1/4 h-full
@@ -11,10 +11,10 @@
     @apply w-full flex justify-between
 }
 .cardbody-top h1{
-    @apply font-semibold text-lg uppercase italic
+    @apply font-semibold text-lg uppercase italic dark:text-zinc-200
 }
 .cardbody-bottom{
-    @apply w-full flex items-center text-xs capitalize
+    @apply w-full flex items-center text-xs capitalize font-semibold
 }
 .pokemon-type{
     @apply flex gap-2

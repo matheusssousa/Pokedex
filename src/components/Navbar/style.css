@@ -1,6 +1,13 @@
 .navbar{
-    @apply w-full h-16 flex items-center justify-center shadow-md
+    @apply w-full h-16 flex items-center justify-between shadow-md px-2
 }
 nav img{
     @apply h-16
+}
+
+.buttonmoon{
+    @apply cursor-pointer text-zinc-500 hover:text-zinc-800 duration-300
+}
+.buttonsun{
+    @apply cursor-pointer text-yellow-300 hover:text-yellow-400 duration-300
 }

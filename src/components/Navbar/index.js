@@ -10,11 +10,12 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
+            <div></div>
             <nav>
                 <img alt="pokeapi-logo" src={logoImg}/>
             </nav>
             <div>
-                {theme == "light" ? <Moon size={32} onClick={() => setTheme("dark")}/> : <Sun size={32} onClick={() => setTheme("light")}/>}
+                {theme == "light" ? <Moon size={32} onClick={() => setTheme("dark")} weight="fill" className="buttonmoon"/> : <Sun size={32} onClick={() => setTheme("light")} weight="fill" className="buttonsun"/>}
             </div>
         </div>
     )

@@ -25,7 +25,7 @@ const Pokemon = (props) => {
 
                         return (
                             <div key={index} className={`pokemontype-${pokemontype}`}>
-                                <p className="font-bold">{pokemontype}</p>
+                                {pokemontype}
                             </div>
                         )
                     })}</div>
