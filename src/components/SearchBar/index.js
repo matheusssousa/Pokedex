@@ -33,13 +33,6 @@ const SearchBar = () => {
                     <button onClick={onButtonClickHandler} title="Pesquisar"><MagnifyingGlass size={22} /></button>
                 </div>
             </div>
-            {pokemon ? (
-                <div>
-                    <div>{pokemon.name}</div>
-                    <div>{pokemon.weight}</div>
-                    <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-                </div>
-            ) : null}
         </div>
     )
 }
