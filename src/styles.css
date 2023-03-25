@@ -16,3 +16,7 @@ body {
 .App{
     @apply px-2
 }
+
+.not-found-text{
+    @apply w-full text-center my-4 font-medium text-yellow-400
+}

@@ -3,30 +3,26 @@ import React, { useState } from "react";
 import { searchPokemon } from "../../Api";
 import "./style.css";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
     const [search, setSearch] = useState("dito")
-    const [pokemon, setPokemon] = useState()
+    const {onSearchHandler} = props
 
-    const handleSearch = (e) => {
+    const onChangeHandler = (e) => {
         setSearch(e.target.value)
+        if (e.target.value.length === 0) {
+            onSearchHandler(undefined)
+        }
     }
 
     const onButtonClickHandler = () => {
         onSearchHandler(search)
-        // const pokemon = onSearch(search)
-        // console.log("pokemon: ", search)
-    }
-
-    const onSearchHandler = async (pokemon) => {
-        const result = await searchPokemon(pokemon)
-        setPokemon(result)
     }
 
     return (
         <div className="searchbar-container">
             <div className="searchbar">
                 <div className="searchbar-input">
-                    <input placeholder="Pesquisar Pokemon" onChange={handleSearch} />
+                    <input placeholder="Pesquisar Pokemon" onChange={onChangeHandler} />
                     <div className="bar" />
                 </div>
                 <div className="searchbar-buttoncontainer">

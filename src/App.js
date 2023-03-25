@@ -3,19 +3,21 @@ import './styles.css';
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import Pokedex from './components/Pokedex';
-import { getPokemonData, getPokemons } from './Api';
+import { getPokemonData, getPokemons, searchPokemon } from './Api';
 
 function App() {
   const [loading,setLoading] = useState(false);
   const [pokemons,setPokemons] = useState([]);
   const [page,setPage] = useState(0);
   const [totalPages,setTotalPages] = useState(0);
+  const [notFound,setNotFound] = useState(false);
 
   const itemsPerPage = 50
 
   const fetchPokemons = async () => {
     try {
       setLoading(true)
+      setNotFound(false)
       const data = await getPokemons(itemsPerPage, itemsPerPage * page);
       const promises = data.results.map(async(pokemon) => {
         return await getPokemonData(pokemon.url)
@@ -29,6 +31,23 @@ function App() {
     }
   }
 
+  const onSearchHandler = async (pokemon) =>{
+    if (!pokemon) {
+      return fetchPokemons()
+    }
+    setLoading(true)
+    setNotFound(false)
+    const result = await searchPokemon(pokemon)
+    if (!result) {
+      setNotFound(true)
+    } else{
+      setPokemons([result])
+      setPage(0)
+      setTotalPages(1)
+    }
+    setLoading(false)
+  }
+
   useEffect(() => {
     console.log("carregou")
     fetchPokemons();
@@ -38,8 +57,10 @@ function App() {
     <>
       <Navbar />
       <div className="App">
-        <SearchBar />
-        <Pokedex pokemons={pokemons} loading={loading} page={page} totalPages={totalPages} setPage={setPage}/>
+        <SearchBar onSearchHandler={onSearchHandler}/>
+        {notFound ? (
+          <div className='not-found-text'>Sinto muito. Eu falhei contigo.</div>
+        ) : <Pokedex pokemons={pokemons} loading={loading} page={page} totalPages={totalPages} setPage={setPage}/>}
       </div>
     </>
   );
