@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar';
 import Pokedex from './components/Pokedex';
 import Loading from './components/Loading';
 import { getPokemonData, getPokemons, searchPokemon } from './Api';
+import Footer from './components/Footer';
 
 function App() {
   const [loading,setLoading] = useState(false);
@@ -68,6 +69,7 @@ function App() {
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 }
