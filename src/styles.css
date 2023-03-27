@@ -14,7 +14,7 @@ body {
     @apply bg-slate-200 m-0 p-0 dark:bg-zinc-800
 }
 .App{
-    @apply px-2
+    @apply px-2 min-h-[80vh]
 }
 
 .not-found-text{
