@@ -27,7 +27,7 @@ const Pokedex = (props) => {
                     <Pagination page={page + 1} totalPages={totalPages} previousClick={OnPreviousClickHandler} afterClick={OnAfterClickHandler} />
                 </div>
             </div>
-            {loading ? (<div>Carregando</div>) :
+            {loading ? null :
                 (<div className="pokedex-grid">
                     {pokemons && pokemons.map((pokemon, index) => {
                         return (<Pokemon pokemon={pokemon} key={index} />)
