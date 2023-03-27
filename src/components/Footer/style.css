@@ -1,8 +1,8 @@
 .footer{
-    @apply w-full h-16 flex items-center justify-center px-2 mt-2 dark:bg-zinc-700 shadow-md
+    @apply w-full h-16 flex items-center justify-center px-2 mt-2 dark:bg-zinc-700 shadow-md 
 }
 .info{
-    @apply text-sm text-zinc-200 font-medium
+    @apply text-sm text-zinc-800 font-medium dark:text-zinc-200
 }
 .info-icons{
     @apply flex items-center justify-around mt-1
