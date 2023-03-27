@@ -3,6 +3,7 @@ import './styles.css';
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import Pokedex from './components/Pokedex';
+import Loading from './components/Loading';
 import { getPokemonData, getPokemons, searchPokemon } from './Api';
 
 function App() {
@@ -60,7 +61,12 @@ function App() {
         <SearchBar onSearchHandler={onSearchHandler}/>
         {notFound ? (
           <div className='not-found-text'>Sinto muito. Eu falhei contigo.</div>
-        ) : <Pokedex pokemons={pokemons} loading={loading} page={page} totalPages={totalPages} setPage={setPage}/>}
+        ) : (
+          <>
+            <Pokedex pokemons={pokemons} loading={loading} page={page} totalPages={totalPages} setPage={setPage}/>
+            <Loading loading={loading} />
+          </>
+        )}
       </div>
     </>
   );
