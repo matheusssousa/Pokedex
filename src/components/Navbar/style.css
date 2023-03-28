@@ -2,7 +2,7 @@
     @apply w-full h-24 flex items-center justify-between p-4
 }
 nav img{
-    @apply h-16 invert dark:invert-0
+    @apply h-10 invert dark:invert-0 sm:h-16 md:h-16 xl:h-16
 }
 
 .buttonmoon{
