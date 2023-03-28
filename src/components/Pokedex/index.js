@@ -5,7 +5,6 @@ import "./style.css";
 
 const Pokedex = (props) => {
     const { pokemons, loading, page, setPage, totalPages } = props
-    console.log("pokemons: ", pokemons)
 
     const OnPreviousClickHandler = () => {
         if (page > 0) {
@@ -33,6 +32,7 @@ const Pokedex = (props) => {
                         return (<Pokemon pokemon={pokemon} key={index} />)
                     })}
                 </div>)}
+            
         </div>
     )
 }
