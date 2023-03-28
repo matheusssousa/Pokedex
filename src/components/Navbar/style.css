@@ -1,5 +1,5 @@
 .navbar{
-    @apply w-full h-16 flex items-center justify-between p-2
+    @apply w-full h-24 flex items-center justify-between p-4
 }
 nav img{
     @apply h-16 invert dark:invert-0
@@ -13,7 +13,7 @@ nav img{
 }
 
 .info-navbar{
-    @apply flex items-center justify-evenly h-full w-52 dark:text-zinc-100
+    @apply flex items-center justify-between h-full w-40 dark:text-zinc-100
 }
 .bar-navbar{
     @apply w-px bg-black h-2/3 dark:bg-zinc-100
