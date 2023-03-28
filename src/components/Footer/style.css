@@ -1,6 +1,12 @@
 .footer{
-    @apply w-full h-16 flex items-center justify-center px-2 mt-2 
+    @apply w-full h-20 flex items-center justify-center px-4 mt-2 pb-4 flex-col
+}
+.bar-footer{
+    @apply w-full h-px bg-black dark:bg-zinc-100 my-3
+}
+.conteudo-footer{
+    @apply w-full h-full flex items-center justify-between
 }
 .info{
-    @apply text-sm text-zinc-800 font-medium dark:text-zinc-200
+    @apply text-xs font-medium dark:text-zinc-100
 }
