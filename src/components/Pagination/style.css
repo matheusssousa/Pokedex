@@ -1,9 +1,9 @@
 .containerpagination{
-    @apply w-32 flex items-center justify-between
+    @apply w-44 flex items-center justify-between
 }
 .containerpagination button{
-    @apply hover:text-blue-700 duration-200 text-yellow-300
+    @apply duration-200 hover:text-blue-800 dark:text-zinc-100 dark:hover:text-zinc-400
 }
 .containerpagination h2{
-    @apply text-gray-500 font-medium dark:text-gray-200
+    @apply font-medium dark:text-zinc-100 text-lg
 }

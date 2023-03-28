@@ -20,19 +20,15 @@ const Pokedex = (props) => {
 
     return (
         <div className="pokedex">
-            <div className="pokedex-header">
-                <h1>Pokedex</h1>
-                <div className="pokedex-pagination">
-                    <Pagination page={page + 1} totalPages={totalPages} previousClick={OnPreviousClickHandler} afterClick={OnAfterClickHandler} />
-                </div>
-            </div>
             {loading ? null :
                 (<div className="pokedex-grid">
                     {pokemons && pokemons.map((pokemon, index) => {
                         return (<Pokemon pokemon={pokemon} key={index} />)
                     })}
                 </div>)}
-            
+            <div className="pokedex-pagination">
+                <Pagination page={page + 1} totalPages={totalPages} previousClick={OnPreviousClickHandler} afterClick={OnAfterClickHandler} />
+            </div>
         </div>
     )
 }

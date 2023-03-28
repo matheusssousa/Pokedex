@@ -1,5 +1,5 @@
 .footer{
-    @apply w-full h-20 flex items-center justify-center px-4 mt-2 pb-4 flex-col
+    @apply w-full h-20 flex items-center justify-center px-4 flex-col
 }
 .bar-footer{
     @apply w-full h-px bg-black dark:bg-zinc-100 my-3

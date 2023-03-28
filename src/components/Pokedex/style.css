@@ -1,11 +1,8 @@
-.pokedex-header{
-    @apply w-full flex items-center my-2
-}
-.pokedex-header h1{
-    @apply w-full font-semibold text-2xl text-yellow-400
+.pokedex{
+    @apply my-4
 }
 .pokedex-pagination{
-    @apply w-32 flex items-center justify-center 
+    @apply w-full flex items-center justify-center my-4
 }
 .pokedex-grid{
     @apply grid gap-2 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1
