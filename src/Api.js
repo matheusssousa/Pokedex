@@ -26,3 +26,4 @@ export const getPokemonData = async (url) => {
         console.log("error: ", error)
     }
 }
+

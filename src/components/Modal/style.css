@@ -1,12 +1,29 @@
 .overlay{
-    @apply w-[100%] h-[100%] fixed bottom-0 top-0 left-0 flex items-center justify-center
+    @apply w-[100%] h-[100%] fixed bottom-0 top-0 left-0 flex items-center justify-center 
+    bg-black backdrop-blur-md bg-opacity-40
 }
-/* bg-black backdrop-blur-md bg-opacity-40 */
+
 .modal{
-    @apply w-1/2 h-1/2 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow 
+    @apply w-1/2 h-2/3 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow p-1
     dark:bg-black dark:bg-opacity-70 dark:backdrop-blur
 }
 
 .modal-header{
-    @apply w-full flex items-center justify-end px-1 dark:text-zinc-100
+    @apply w-full flex justify-end
+}
+.modal-header button{
+    @apply hover:text-zinc-100 duration-300
+}
+.modal-container{
+    @apply w-full h-full flex 
+}
+.modal-container-left{
+    @apply w-1/2 h-full
+}
+.modal-container-right{
+    @apply w-1/2 h-full
+}
+
+.pokemon-name-modal{
+    @apply text-5xl capitalize text-zinc-100
 }

@@ -5,8 +5,8 @@
     @apply w-full h-px bg-black dark:bg-zinc-100 my-3
 }
 .conteudo-footer{
-    @apply w-full h-full flex items-center justify-between
+    @apply w-full h-full flex items-center justify-between dark:text-zinc-100
 }
 .info{
-    @apply text-xs font-medium dark:text-zinc-100
+    @apply text-xs font-medium 
 }

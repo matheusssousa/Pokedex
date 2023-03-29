@@ -12,8 +12,6 @@ const Pokemon = (props) => {
         setShowModal(true)
     }
 
-    console.log(showModal)
-
     return (
         <div className="card-pokemon">
             <div className="pokemonimg">
@@ -47,12 +45,12 @@ const Pokemon = (props) => {
                         <h1>Peso <p>{pokemon.weight} hg</p></h1>
                     </section>
                 </div>
-                <button onClick={handlerShowModal} className="pokemoncard-button"><Info size={20} weight='bold' />Mais detalhes</button>
+                <button onClick={() => handlerShowModal()} className="pokemoncard-button"><Info size={20} weight='bold' />Mais detalhes
+                    {showModal ? (
+                        <Modal closeModal={setShowModal} pokemon={pokemon} pokemonname={pokemon.name} imagem={imgUrl} />
+                    ) : null}
+                </button>
             </div>
-
-            {showModal ? (
-                <Modal closeModal={setShowModal} pokemon={pokemon} pokemonname={pokemon.name} imagem={imgUrl} />
-            ) : null}
         </div>
     )
 }
