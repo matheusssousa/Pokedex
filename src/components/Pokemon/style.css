@@ -3,7 +3,8 @@
     dark:bg-gradient-radial dark:from-blue-400 items-center border dark:border-neutral-800 border-neutral-200
 }
 .pokemonimg{
-    @apply w-2/3 h-full items-center flex justify-center
+    @apply w-1/3 h-full items-center flex justify-center
+    md:2/3
 }
 .pokemoncard-body{
     @apply w-1/2 flex flex-col h-full justify-between items-center py-1 px-1 rounded-r-xl
