@@ -2,19 +2,19 @@
     @apply w-full h-24 flex items-center justify-between p-4
 }
 nav img{
-    @apply h-10 invert dark:invert-0 sm:h-16 md:h-16 xl:h-16
+    @apply h-10 invert-0 dark:invert sm:h-16 md:h-16 xl:h-16
 }
 
 .buttonmoon{
     @apply cursor-pointer
 }
 .buttonsun{
-    @apply cursor-pointer hover:text-yellow-200 duration-300
+    @apply cursor-pointer 
 }
 
 .info-navbar{
-    @apply flex items-center justify-between h-full w-40 dark:text-zinc-100
+    @apply flex items-center justify-between h-full w-40 text-zinc-100 dark:text-neutral-900
 }
 .bar-navbar{
-    @apply w-px bg-black h-2/3 dark:bg-zinc-100
+    @apply w-px bg-zinc-100 h-2/3 dark:bg-neutral-900
 }

@@ -13,11 +13,11 @@
 }
 
 .bar-header-info{
-    @apply w-20 h-full flex justify-center flex-col items-center
+    @apply w-20 h-full flex flex-col items-center gap-4 text-zinc-100 dark:text-neutral-900
 }
 .bar-header{
-    @apply w-px h-1/2 bg-gradient-to-b from-zinc-100
+    @apply w-px h-1/2 bg-gradient-to-b from-zinc-100 dark:from-neutral-900
 }
 .bar-header-top{
-    @apply w-px h-1/2 bg-gradient-to-t from-zinc-100
+    @apply w-px h-1/2 bg-gradient-to-t from-zinc-100 dark:from-neutral-900
 }

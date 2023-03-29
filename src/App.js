@@ -14,7 +14,7 @@ function App() {
   const [totalPages,setTotalPages] = useState(0);
   const [notFound,setNotFound] = useState(false);
 
-  const itemsPerPage = 50
+  const itemsPerPage = 30
 
   const fetchPokemons = async () => {
     try {

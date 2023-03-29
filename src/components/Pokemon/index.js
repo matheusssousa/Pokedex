@@ -1,4 +1,4 @@
-import { PokerChip } from "@phosphor-icons/react";
+import { Info, PokerChip } from "@phosphor-icons/react";
 import React, { useState } from "react";
 import Modal from "../Modal";
 import "./style.css"
@@ -15,20 +15,16 @@ const Pokemon = (props) => {
     console.log(showModal)
 
     return (
-        <div className="card-pokemon" onClick={handlerShowModal}>
+        <div className="card-pokemon">
             <div className="pokemonimg">
                 {pokemon.sprites.front_default ? (<img alt={pokemon.name} src={imgUrl} />)
                     :
                     (<PokerChip size={80} />)
                 }
             </div>
-            <div className="pokemoncardbody">
-                <div className="cardbody-top">
-                    <h1>{pokemon.name}</h1>
-                    {/* <p>{pokemon.id}</p> */}
-                </div>
-                <div className="cardbody-bottom">
-                    <div className="pokemon-type">
+            <div className="pokemoncard-body">
+                <h1 className="pokemon-name">{pokemon.name}</h1>
+                <div className="pokemon-type">
                         {pokemon.types.map((type, index) => {
                             const pokemontype = type.type.name;
 
@@ -39,8 +35,9 @@ const Pokemon = (props) => {
                             )
                         })}
                     </div>
-                </div>
             </div>
+            <button onClick={handlerShowModal} className="pokemoncard-button"><Info size={20} weight='bold'/>Mais detalhes</button>
+
             {showModal ? (
                 <Modal closeModal={setShowModal} pokemon={pokemon} pokemonname={pokemon.name} imagem={imgUrl}/>
             ) : null}

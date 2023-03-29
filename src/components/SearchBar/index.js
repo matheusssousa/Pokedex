@@ -1,6 +1,5 @@
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import React, { useState } from "react";
-import { searchPokemon } from "../../Api";
 import "./style.css";
 
 const SearchBar = (props) => {

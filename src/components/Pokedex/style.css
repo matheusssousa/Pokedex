@@ -1,10 +1,10 @@
 .pokedex{
-    @apply my-4
+    @apply my-4 px-4
 }
 .pokedex-pagination{
     @apply w-full flex items-center justify-center my-4
 }
 .pokedex-grid{
-    @apply grid gap-2 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1
+    @apply grid gap-6 grid-cols-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1
 }
 
