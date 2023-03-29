@@ -1,4 +1,4 @@
-import { Info, PokerChip } from "@phosphor-icons/react";
+import { Airplay, Info, PokerChip, Ruler } from "@phosphor-icons/react";
 import React, { useState } from "react";
 import Modal from "../Modal";
 import "./style.css"
@@ -6,7 +6,7 @@ import "./style.css"
 const Pokemon = (props) => {
     const { pokemon } = props
     const [showModal, setShowModal] = useState(false)
-    const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/${pokemon.id}.png`;
+    const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${pokemon.id}.png`;
 
     const handlerShowModal = () => {
         setShowModal(true)
@@ -23,8 +23,9 @@ const Pokemon = (props) => {
                 }
             </div>
             <div className="pokemoncard-body">
-                <h1 className="pokemon-name">{pokemon.name}</h1>
-                <div className="pokemon-type">
+                <nav>
+                    <h1 className="pokemon-name">{pokemon.name}</h1>
+                    <div className="pokemon-type">
                         {pokemon.types.map((type, index) => {
                             const pokemontype = type.type.name;
 
@@ -35,11 +36,22 @@ const Pokemon = (props) => {
                             )
                         })}
                     </div>
+                </nav>
+                <div className="pokemon-info">
+                    <section className="pokemon-height">
+                        <Ruler size={30} weight='bold' />
+                        <h1>Height <p>{pokemon.height} m</p></h1>
+                    </section>
+                    <section className="pokemon-height">
+                        <Airplay size={30} weight='bold' />
+                        <h1>Weight <p>{pokemon.weight} kg</p></h1>
+                    </section>
+                </div>
+                <button onClick={handlerShowModal} className="pokemoncard-button"><Info size={20} weight='bold' />Mais detalhes</button>
             </div>
-            <button onClick={handlerShowModal} className="pokemoncard-button"><Info size={20} weight='bold'/>Mais detalhes</button>
 
             {showModal ? (
-                <Modal closeModal={setShowModal} pokemon={pokemon} pokemonname={pokemon.name} imagem={imgUrl}/>
+                <Modal closeModal={setShowModal} pokemon={pokemon} pokemonname={pokemon.name} imagem={imgUrl} />
             ) : null}
         </div>
     )
