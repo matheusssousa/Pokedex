@@ -38,11 +38,11 @@ const Pokemon = (props) => {
                 <div className="pokemon-info">
                     <section className="pokemon-height">
                         <Ruler size={30} weight='bold' />
-                        <h1>Altura <p>{pokemon.height} m</p></h1>
+                        <h1>Altura <p>{pokemon.height/10} m</p></h1>
                     </section>
                     <section className="pokemon-height">
                         <Airplay size={30} weight='bold' />
-                        <h1>Peso <p>{pokemon.weight} hg</p></h1>
+                        <h1>Peso <p>{pokemon.weight/10} kg</p></h1>
                     </section>
                 </div>
                 <button onClick={() => handlerShowModal()} className="pokemoncard-button"><Info size={20} weight='bold' />Mais detalhes
