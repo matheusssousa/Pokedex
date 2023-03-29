@@ -1,6 +1,9 @@
 .header-body{
     @apply w-full h-screen bg-yellow-400
 }
+.header-bottom{
+    @apply w-full h-20 bg-gradient-to-b from-yellow-400
+}
 .header-info{
     @apply w-full h-full flex items-center justify-evenly pb-10
 }
