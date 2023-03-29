@@ -1,0 +1,12 @@
+.overlay{
+    @apply w-[100%] h-[100%] fixed bottom-0 top-0 left-0 flex items-center justify-center
+}
+/* bg-black backdrop-blur-md bg-opacity-40 */
+.modal{
+    @apply w-1/2 h-1/2 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow 
+    dark:bg-black dark:bg-opacity-70 dark:backdrop-blur
+}
+
+.modal-header{
+    @apply w-full flex items-center justify-end px-1 dark:text-zinc-100
+}

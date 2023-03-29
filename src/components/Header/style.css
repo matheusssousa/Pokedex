@@ -1,0 +1,20 @@
+.header-body{
+    @apply w-full h-screen bg-yellow-400
+}
+.header-info{
+    @apply w-full h-full flex items-center justify-evenly pb-10
+}
+
+.img-pikachu{
+    @apply h-[80%]
+}
+
+.bar-header-info{
+    @apply w-20 h-full flex justify-center flex-col items-center
+}
+.bar-header{
+    @apply w-px h-1/2 bg-gradient-to-b from-zinc-100
+}
+.bar-header-top{
+    @apply w-px h-1/2 bg-gradient-to-t from-zinc-100
+}

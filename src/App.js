@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './styles.css';
-import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import Pokedex from './components/Pokedex';
 import Loading from './components/Loading';
 import { getPokemonData, getPokemons, searchPokemon } from './Api';
 import Footer from './components/Footer';
+import Header from './components/Header';
+import { Waves } from './components/Waves';
 
 function App() {
   const [loading,setLoading] = useState(false);
@@ -56,7 +57,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Header />
+      <Waves />
       <div className="App">
         <SearchBar onSearchHandler={onSearchHandler}/>
         {notFound ? (
