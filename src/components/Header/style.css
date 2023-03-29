@@ -2,22 +2,33 @@
     @apply w-full h-screen bg-yellow-400
 }
 .header-bottom{
-    @apply w-full h-20 bg-gradient-to-b from-yellow-400
+    @apply w-full h-28 bg-gradient-to-b from-yellow-400
 }
 .header-info{
-    @apply w-full h-full flex items-center justify-evenly pb-10
+    @apply w-full h-full flex flex-col-reverse items-center justify-evenly pb-10 text-zinc-100 dark:text-neutral-900
+    md:flex-row
+}
+.text-info{
+    @apply w-full font-medium gap-5 flex flex-col px-4
+    md:w-full xl:w-1/3
+}
+.pikachu-name{
+    @apply text-6xl font-bold 
 }
 
 .img-pikachu{
-    @apply h-[80%]
+    @apply h-[40%] 
+    md:h-[40%] xl:h-[80%]
 }
-
 .bar-header-info{
-    @apply w-20 h-full flex flex-col items-center gap-4 text-zinc-100 dark:text-neutral-900
+    @apply w-full h-20 flex items-center gap-4 text-zinc-100 dark:text-neutral-900 
+    md:flex-col md:h-full md:w-20
 }
 .bar-header{
-    @apply w-px h-1/2 bg-gradient-to-b from-zinc-100 dark:from-neutral-900
+    @apply w-full h-px bg-gradient-to-r from-zinc-100 dark:from-neutral-900 
+    md:w-px md:h-1/2 md:bg-gradient-to-b
 }
 .bar-header-top{
-    @apply w-px h-1/2 bg-gradient-to-t from-zinc-100 dark:from-neutral-900
+    @apply w-full h-px bg-gradient-to-l from-zinc-100 dark:from-neutral-900 
+    md:w-px md:h-1/2 md:bg-gradient-to-t
 }

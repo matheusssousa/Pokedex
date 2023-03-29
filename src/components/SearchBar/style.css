@@ -1,5 +1,5 @@
 .searchbar-container{
-    @apply w-full h-12 flex items-center justify-center
+    @apply w-full h-12 flex items-center justify-center my-4
 }
 .searchbar{
     @apply w-full sm:w-1/2 md:w-1/2 xl:w-1/2 h-10 flex gap-3
