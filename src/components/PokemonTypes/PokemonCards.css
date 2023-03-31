@@ -1,0 +1,129 @@
+/* CARD POKEMON TYPES STYLES */
+.card-pokemon-water{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-blue-500 to-slate-100
+    dark:bg-gradient-radial dark:from-blue-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-fire{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-red-500 to-slate-100
+    dark:bg-gradient-radial dark:from-red-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-grass{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-green-500 to-slate-100
+    dark:bg-gradient-radial dark:from-green-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-poison{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-purple-500 to-slate-100
+    dark:bg-gradient-radial dark:from-purple-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-flying{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-slate-500 to-slate-100
+    dark:bg-gradient-radial dark:from-slate-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-steel{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-zinc-500 to-slate-100
+    dark:bg-gradient-radial dark:from-zinc-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-electric{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-yellow-500 to-slate-100
+    dark:bg-gradient-radial dark:from-yellow-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-ground{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-amber-500 to-slate-100
+    dark:bg-gradient-radial dark:from-amber-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-fairy{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-pink-500 to-slate-100
+    dark:bg-gradient-radial dark:from-pink-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-normal{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-neutral-200 to-slate-100
+    dark:bg-gradient-radial dark:from-neutral-200 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-bug{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-lime-500 to-slate-100
+    dark:bg-gradient-radial dark:from-lime-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-fighting{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-red-800 to-slate-100
+    dark:bg-gradient-radial dark:from-red-800 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-psychic{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-indigo-500 to-slate-100
+    dark:bg-gradient-radial dark:from-indigo-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-rock{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-zinc-400 to-slate-100
+    dark:bg-gradient-radial dark:from-zinc-400 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-ghost{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-zinc-200 to-slate-100
+    dark:bg-gradient-radial dark:from-zinc-200 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-ice{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-sky-500 to-slate-100
+    dark:bg-gradient-radial dark:from-sky-500 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-dragon{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-indigo-800 to-slate-100
+    dark:bg-gradient-radial dark:from-indigo-800 items-center border dark:border-neutral-800 border-neutral-200
+}
+.card-pokemon-dark{
+    @apply w-full flex h-80 rounded-xl shadow-md justify-center bg-gradient-radial from-purple-800 to-slate-100
+    dark:bg-gradient-radial dark:from-purple-800 items-center border dark:border-neutral-800 border-neutral-200
+}
+
+/* POKEMONS TYPES STYLE */
+.pokemontype-grass{
+    @apply bg-green-900 px-2 py-1 text-green-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-fire{
+    @apply bg-red-900 px-2 py-1 text-red-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-water{
+    @apply bg-blue-900 px-2 py-1 text-blue-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-poison{
+    @apply bg-purple-900 px-2 py-1 text-purple-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-flying{
+    @apply bg-slate-900 px-2 py-1 text-slate-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-steel{
+    @apply bg-zinc-900 px-2 py-1 text-zinc-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-electric{
+    @apply bg-yellow-900 px-2 py-1 text-yellow-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-ground{
+    @apply bg-amber-900 px-2 py-1 text-amber-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-fairy{
+    @apply bg-pink-900 px-2 py-1 text-pink-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-normal{
+    @apply bg-neutral-600 px-2 py-1 text-neutral-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-bug{
+    @apply bg-lime-900 px-2 py-1 text-lime-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-fighting{
+    @apply bg-red-500 px-2 py-1 text-red-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-psychic{
+    @apply bg-indigo-600 px-2 py-1 text-indigo-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-rock{
+    @apply bg-zinc-700 px-2 py-1 text-zinc-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-ghost{
+    @apply bg-zinc-700 px-2 py-1 text-zinc-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-ice{
+    @apply bg-sky-600 px-2 py-1 text-sky-200 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-dragon{
+    @apply bg-indigo-900 px-2 py-1 text-indigo-500 rounded-lg shadow-md w-16 text-center
+}
+.pokemontype-dark{
+    @apply bg-purple-900 px-2 py-1 text-indigo-800 rounded-lg shadow-md w-16 text-center
+}

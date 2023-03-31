@@ -26,7 +26,7 @@ const Header = () => {
                 <div className='header-info'>
                     <div className='text-info'>
                         <h1 className='pikachu-name'>{pokemon && (pokemon.name)}</h1>
-                        {/* {pokemon.types.map((type, index) => {
+                        {/* {pokemon.type.map((type, index) => {
                             const pokemontype = type.type.name;
 
                             return (

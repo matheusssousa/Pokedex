@@ -2,6 +2,7 @@ import { Airplay, Info, PokerChip, Ruler } from "@phosphor-icons/react";
 import React, { useState } from "react";
 import Modal from "../Modal";
 import "./style.css"
+import "../PokemonTypes/PokemonCards.css"
 
 const Pokemon = (props) => {
     const { pokemon } = props
@@ -12,8 +13,10 @@ const Pokemon = (props) => {
         setShowModal(true)
     }
 
+    const backgroundClass = `card-pokemon-${pokemon.types[0].type.name}`;
+
     return (
-        <div className="card-pokemon">
+        <div className={backgroundClass}>
             <div className="pokemonimg">
                 {pokemon.sprites.front_default ? (<img alt={pokemon.name} src={imgUrl} />)
                     :
@@ -25,11 +28,9 @@ const Pokemon = (props) => {
                     <h1 className="pokemon-name">{pokemon.name}</h1>
                     <div className="pokemon-type">
                         {pokemon.types.map((type, index) => {
-                            const pokemontype = type.type.name;
-
                             return (
-                                <div key={index} className={`pokemontype-${pokemontype}`}>
-                                    {pokemontype}
+                                <div key={index} className={`pokemontype-${type.type.name}`}>
+                                    {type.type.name}
                                 </div>
                             )
                         })}

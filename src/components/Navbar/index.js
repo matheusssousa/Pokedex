@@ -16,7 +16,7 @@ const Navbar = () => {
             </nav>
             <div className="info-navbar">
                 <div>
-                    {theme == "light" ? <Moon size={25} onClick={() => setTheme("dark")} className="buttonmoon" /> : <Sun size={25} onClick={() => setTheme("light")} className="buttonsun" />}
+                    {theme === "light" ? <Moon size={25} onClick={() => setTheme("dark")} className="buttonmoon" /> : <Sun size={25} onClick={() => setTheme("light")} className="buttonsun" />}
                 </div>
                 <div className="bar-navbar"/>
                 <SocialMedia />

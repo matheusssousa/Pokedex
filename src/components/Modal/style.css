@@ -21,21 +21,24 @@
     @apply w-1/2 h-full
 }
 .modal-container-right{
-    @apply w-1/2 h-full
+    @apply w-1/2 h-full text-zinc-100
 }
 
 .pokemon-name-modal{
-    @apply text-5xl capitalize text-zinc-100
+    @apply capitalize text-5xl
 }
 .types-pokemon-modal{
-    @apply capitalize flex gap-2 justify-center mt-2
+    @apply capitalize flex gap-2 justify-center
 }
-.pokemon-info-modal{
-    @apply flex justify-center text-neutral-900 dark:text-zinc-100
+.pokemon-stats-modal{
+    @apply font-light text-3xl mt-4 
 }
-.pokemon-height-modal{
-    @apply flex items-center gap-2 font-semibold w-full justify-evenly
+.stat-container-barra{
+    @apply flex gap-3 items-center
 }
-.pokemon-height-modal h1{
-    @apply flex flex-col
+.stat-info{
+    @apply uppercase flex justify-between px-4 font-normal items-center
+}
+.stat-barra{
+    @apply h-2 rounded-md bg-green-300
 }
