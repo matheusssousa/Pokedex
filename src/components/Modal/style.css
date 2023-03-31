@@ -4,7 +4,7 @@
 }
 
 .modal{
-    @apply w-2/3 h-2/3 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow p-1
+    @apply w-3/4 h-2/3 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow p-1
     dark:bg-black dark:bg-opacity-70 dark:backdrop-blur
     md:w-1/2
 }
