@@ -4,8 +4,9 @@
 }
 
 .modal{
-    @apply w-1/2 h-2/3 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow p-1
+    @apply w-2/3 h-2/3 bg-slate-200 rounded-lg bg-opacity-70 backdrop-blur shadow p-1
     dark:bg-black dark:bg-opacity-70 dark:backdrop-blur
+    md:w-1/2
 }
 
 .modal-header{
@@ -15,13 +16,18 @@
     @apply hover:text-zinc-100 duration-300
 }
 .modal-container{
-    @apply w-full h-full flex 
+    @apply w-full h-full flex flex-col
+    md:flex-row
 }
 .modal-container-left{
-    @apply w-1/2 h-full
+    @apply w-full h-32 flex justify-center
+    md:h-full
+}
+.imagem{
+    @apply h-32
 }
 .modal-container-right{
-    @apply w-1/2 h-full text-zinc-100
+    @apply w-full h-full text-zinc-100
 }
 
 .pokemon-name-modal{
