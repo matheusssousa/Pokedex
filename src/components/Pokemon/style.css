@@ -15,9 +15,6 @@
 .pokemon-name{
     @apply font-semibold text-3xl capitalize dark:text-zinc-200 text-neutral-900 w-full text-center
 }
-.pokemon-type{
-    @apply flex gap-2 capitalize font-semibold text-xs
-}
 .pokemoncard-button{
     @apply bg-blue-600 flex items-center justify-center py-1 px-1 rounded-xl text-sm w-full
     font-semibold text-zinc-200 gap-1  duration-300

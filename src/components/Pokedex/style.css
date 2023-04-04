@@ -5,6 +5,9 @@
     @apply w-full flex items-center justify-center my-4
 }
 .pokedex-grid{
-    @apply grid gap-6 grid-cols-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1
+    @apply grid gap-6 grid-cols-1 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-4
 }
 
+.buttonAllFilters{
+    @apply px-2 py-1 rounded-lg font-semibold w-16 shadow-md bg-slate-50 text-xs
+}

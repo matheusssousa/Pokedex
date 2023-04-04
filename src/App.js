@@ -12,9 +12,8 @@ function App() {
   const [pokemons,setPokemons] = useState([]);
   const [page,setPage] = useState(0);
   const [totalPages,setTotalPages] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(30);
   const [notFound,setNotFound] = useState(false);
-
-  const itemsPerPage = 30
 
   const fetchPokemons = async () => {
     try {
@@ -50,6 +49,10 @@ function App() {
     setLoading(false)
   }
 
+  const handleItemsPerPageChange = (onItemsPerPageChange) => {
+    setItemsPerPage(onItemsPerPageChange);
+  }
+
   useEffect(() => {
     fetchPokemons();
   }, [page])
@@ -63,7 +66,7 @@ function App() {
           <div className='not-found-text'>Sinto muito. Eu falhei contigo.</div>
         ) : (
           <>
-            <Pokedex pokemons={pokemons} loading={loading} page={page} totalPages={totalPages} setPage={setPage}/>
+            <Pokedex pokemons={pokemons} loading={loading} page={page} totalPages={totalPages} setPage={setPage} onItemsPerPageChange={handleItemsPerPageChange}/>
             <Loading loading={loading} />
           </>
         )}

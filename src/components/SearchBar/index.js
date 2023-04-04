@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./style.css";
 
 const SearchBar = (props) => {
-    const [search, setSearch] = useState("dito")
+    const [search, setSearch] = useState("")
     const {onSearchHandler} = props
 
     const onChangeHandler = (e) => {

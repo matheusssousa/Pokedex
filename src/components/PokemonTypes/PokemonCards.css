@@ -73,57 +73,60 @@
 }
 
 /* POKEMONS TYPES STYLE */
+.pokemon-type{
+    @apply flex gap-3 font-semibold text-xs
+}
 .pokemontype-grass{
-    @apply bg-green-900 px-2 py-1 text-green-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-green-900 px-2 py-1 text-green-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-fire{
-    @apply bg-red-900 px-2 py-1 text-red-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-red-900 px-2 py-1 text-red-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-water{
-    @apply bg-blue-900 px-2 py-1 text-blue-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-blue-900 px-2 py-1 text-blue-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-poison{
-    @apply bg-purple-900 px-2 py-1 text-purple-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-purple-900 px-2 py-1 text-purple-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-flying{
-    @apply bg-slate-900 px-2 py-1 text-slate-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-slate-900 px-2 py-1 text-slate-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-steel{
-    @apply bg-zinc-900 px-2 py-1 text-zinc-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-zinc-900 px-2 py-1 text-zinc-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-electric{
-    @apply bg-yellow-900 px-2 py-1 text-yellow-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-yellow-900 px-2 py-1 text-yellow-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-ground{
-    @apply bg-amber-900 px-2 py-1 text-amber-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-amber-900 px-2 py-1 text-amber-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-fairy{
-    @apply bg-pink-900 px-2 py-1 text-pink-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-pink-900 px-2 py-1 text-pink-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-normal{
-    @apply bg-neutral-600 px-2 py-1 text-neutral-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-neutral-600 px-2 py-1 text-neutral-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-bug{
-    @apply bg-lime-900 px-2 py-1 text-lime-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-lime-900 px-2 py-1 text-lime-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-fighting{
-    @apply bg-red-500 px-2 py-1 text-red-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-red-500 px-2 py-1 text-red-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-psychic{
-    @apply bg-indigo-600 px-2 py-1 text-indigo-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-indigo-600 px-2 py-1 text-indigo-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-rock{
-    @apply bg-zinc-700 px-2 py-1 text-zinc-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-zinc-700 px-2 py-1 text-zinc-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-ghost{
-    @apply bg-zinc-700 px-2 py-1 text-zinc-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-zinc-700 px-2 py-1 text-zinc-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-ice{
-    @apply bg-sky-600 px-2 py-1 text-sky-200 rounded-lg shadow-md w-16 text-center
+    @apply bg-sky-600 px-2 py-1 text-sky-200 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-dragon{
-    @apply bg-indigo-900 px-2 py-1 text-indigo-500 rounded-lg shadow-md w-16 text-center
+    @apply bg-indigo-900 px-2 py-1 text-indigo-500 rounded-lg shadow-md w-16 text-center capitalize
 }
 .pokemontype-dark{
-    @apply bg-purple-900 px-2 py-1 text-indigo-800 rounded-lg shadow-md w-16 text-center
+    @apply bg-purple-900 px-2 py-1 text-indigo-800 rounded-lg shadow-md w-16 text-center capitalize
 }
