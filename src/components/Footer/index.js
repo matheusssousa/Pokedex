@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer">
             <div className="bar-footer"/>
             <div className="conteudo-footer">
-                <div className="info">
+                <div className="text-xs font-medium ">
                     <p>Direitos de imagem para Nintendo & The Pokémon Company</p>
                     <p>Dados pegos da API - pokeapi.co</p>
                 </div>

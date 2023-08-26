@@ -24,7 +24,7 @@
     md:h-full
 }
 .imagem{
-    @apply h-52 -translate-y-32
+    @apply h-52 -translate-y-24
     md:-translate-y-0 md:h-96
 }
 .modal-container-right{

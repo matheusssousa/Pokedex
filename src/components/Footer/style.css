@@ -7,6 +7,3 @@
 .conteudo-footer{
     @apply w-full h-full flex items-center justify-between dark:text-zinc-100
 }
-.info{
-    @apply text-xs font-medium 
-}

@@ -6,7 +6,7 @@ function Loading(props) {
     return (
       <div className="Loading">
         <div className="Loading-spinner"></div>
-        <p>Carregando</p>
+        <p className='text-yellow-300 mt-3 text-2xl'>Carregando</p>
       </div>
     );
   } else {

@@ -3,32 +3,52 @@ import Pagination from "../Pagination";
 import Pokemon from "../Pokemon";
 import "./style.css";
 import "../PokemonTypes/PokemonCards.css";
+import { getPokemonsByType } from "../../Api";
 
 const Pokedex = (props) => {
-    const { pokemons, loading, page, setPage, totalPages, onItemsPerPageChange } = props
+    const { loading, page, setPage, totalPages, onItemsPerPageChange, pokemons } = props;
     const pokemonListRef = useRef();
-    const [filterType, setFilterType] = useState();
+    const [filterType, setFilterType] = useState("");
+    const [filteredPokemons, setFilteredPokemons] = useState([]);
+    const [allPokemons, setAllPokemons] = useState([]);
 
     const OnPreviousClickHandler = () => {
         if (page > 0) {
-            setPage(page - 1)
-            pokemonListRef.current.scrollIntoView({ behavior: "smooth" });
+            setPage(page - 1);
         }
     }
 
     const OnAfterClickHandler = () => {
         if (page + 1 !== totalPages) {
-            setPage(page + 1)
-            pokemonListRef.current.scrollIntoView({ behavior: "smooth" });
+            setPage(page + 1);
         }
     }
 
-    const filterTypePokemonList = (filterType) => {
-        if (!filterType) {
-            return pokemons;
+    const filterTypePokemonList = async (type) => {
+        try {
+            const pokemonsOfType = await getPokemonsByType(type);
+            setFilteredPokemons(pokemonsOfType);
+        } catch (error) {
+            console.error(error);
+            setFilteredPokemons([]);
         }
-        return pokemons.filter(pokemon => pokemon.types[0].type.name === filterType);
     }
+
+    useEffect(() => {
+        setPage(0);
+        onItemsPerPageChange(100);
+        setAllPokemons(pokemons);
+    }, [pokemons, setPage, onItemsPerPageChange]);
+
+    useEffect(() => {
+        if (!filterType) {
+            setFilteredPokemons(allPokemons);
+        } else {
+            filterTypePokemonList(filterType);
+        }
+        
+        setPage(0); // Reset page when filter changes
+    }, [filterType, allPokemons, setPage]);
 
     const options = [
         { tipo: "flying" },
@@ -51,16 +71,9 @@ const Pokedex = (props) => {
         { tipo: "fire" },
     ];
 
-    useEffect(() => {
-        if (filterType === "") {
-            onItemsPerPageChange(100)
-        } else (onItemsPerPageChange(503))
-        setPage(0)
-    }, [filterType])
-
     return (
         <div className="pokedex">
-            <div className="pokemon-type">
+            <div className="pokemon-type md:pokemon-type">
                 <button className="buttonAllFilters" onClick={() => setFilterType("")}>All</button>
                 {options.map((opt, index) => {
                     return (
@@ -72,13 +85,13 @@ const Pokedex = (props) => {
                         >{opt.tipo}</button>)
                 })}
             </div>
-
             {loading ? null :
                 (<div className="pokedex-grid" ref={pokemonListRef}>
-                    {filterTypePokemonList(filterType).map((pokemon, index) => {
-                        return (<Pokemon pokemon={pokemon} key={index} />)
-                    })}
-                </div>)}
+                    {filteredPokemons.map((pokemon, index) => (
+                        <Pokemon pokemon={pokemon} key={index} />
+                    ))}
+                </div>)
+            }
             <div className="pokedex-pagination">
                 <Pagination page={page + 1} totalPages={totalPages} previousClick={OnPreviousClickHandler} afterClick={OnAfterClickHandler} />
             </div>
